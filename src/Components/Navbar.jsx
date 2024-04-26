@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <div className='flex justify-between'>
-        <img src='../src/assets/logo.svg' className='max-h-[30px] aspect-auto mr-5 flex-shrink'/>
+        <img src='/assets/logo.svg' className='max-h-[30px] aspect-auto mr-5 flex-shrink'/>
         <ul className='hidden md:flex items-center gap-10'>
             {
                 navbarLinks.map((link, index) => (

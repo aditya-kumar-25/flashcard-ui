@@ -82,11 +82,11 @@ function FlashcardDisplay() {
                     className="relative flex items-center justify-center see-height min-h-[300px] w-[80vw] sm:w-[60vw] md:w-[50vw] lg:w-[40vw] flashcard-gradient text-white font-semibold text-lg"
                   >
                     <img
-                      src="../src/assets/bulb.svg"
+                      src="/assets/bulb.svg"
                       className="absolute top-6 left-6 h-[25px] aspect-square"
                     />
                     <img
-                      src="../src/assets/sound.svg"
+                      src="/assets/sound.svg"
                       className="absolute top-6 right-6 h-[25px] aspect-square"
                     />
                     <p>{content.front}</p>
@@ -98,7 +98,7 @@ function FlashcardDisplay() {
 
         <div className="hidden sm:flex justify-between items-center gap-24 max-w-[90vw] overflow-x-auto">
           <img
-            src="../src/assets/reset.svg"
+            src="/assets/reset.svg"
             className="h-[25px] aspect-square cursor-pointer"
             onClick={() => setPage(1)}
           />
@@ -121,7 +121,7 @@ function FlashcardDisplay() {
             </div>
           </div>
           <img
-            src="../src/assets/fullScreen.svg"
+            src="/assets/fullScreen.svg"
             className="h-[25px] aspect-square cursor-pointer"
             onClick={fullScreenHandler}
           />
@@ -148,12 +148,12 @@ function FlashcardDisplay() {
           </div>
           <div className="flex gap-24">
             <img
-              src="../src/assets/reset.svg"
+              src="/assets/reset.svg"
               className="h-[25px] aspect-square cursor-pointer"
               onClick={() => setPage(1)}
             />
             <img
-              src="../src/assets/fullScreen.svg"
+              src="/assets/fullScreen.svg"
               className="h-[25px] aspect-square cursor-pointer"
               onClick={fullScreenHandler}
             />
@@ -165,13 +165,13 @@ function FlashcardDisplay() {
         <div className="flex gap-5">
           <div className="p-3 rounded-full primary-shadow h-fit">
             <img
-              src="../src/assets/icon.svg"
+              src="/assets/icon.svg"
               className="h-[30px] aspect-square"
             />
           </div>
           <div>
             <p className="text-[#696671] text-xs">Published by</p>
-            <img src="../src//assets/nameLogo.svg" className=" aspect-square" />
+            <img src="/assets/nameLogo.svg" className=" aspect-square" />
           </div>
         </div>
 
