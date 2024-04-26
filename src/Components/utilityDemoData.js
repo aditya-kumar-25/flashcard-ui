@@ -46,3 +46,23 @@ export const flashCardContent = [
         answer:'Absolutely. Flashcards are an excellent tool for test preparation, allowing students to review key concepts, terms, and facts. They provide a quick and focused way to reinforce knowledge before exams.',
     }
   ]
+
+
+  export const navbarLinks = [
+    {
+        title:'Home',
+        path:'/',
+    },
+    {
+        title:'Flashcard',
+        path:'/flashcard',
+    },
+    {
+        title:'Contact',
+        path: '/contact',
+    },
+    {
+        title: 'FAQ',
+        path: '/faq',
+    }
+]

@@ -1,25 +1,8 @@
 import React from 'react'
 import '../index.css'
 import Hamburger from './Hamburger'
-
-const navbarLinks = [
-    {
-        title:'Home',
-        path:'/',
-    },
-    {
-        title:'Flashcard',
-        path:'/flashcard',
-    },
-    {
-        title:'Contact',
-        path: '/contact',
-    },
-    {
-        title: 'FAQ',
-        path: '/faq',
-    }
-]
+import MobileNavbar from './MobileNavbar';
+import { navbarLinks } from './utilityDemoData';
 
 function Navbar() {
 
@@ -30,13 +13,15 @@ function Navbar() {
             {
                 navbarLinks.map((link, index) => (
                     <li key={index}>
-                        <a className=' font-[400]' href={link.path}>{link.title}</a>
+                        <a className=' font-[500]' href={link.path}>{link.title}</a>
                     </li>
                 ))
             }
             <li><a href='/login' className='primary-gradient px-3 py-1 rounded-full text-sm font-[500]'>Login</a></li>
         </ul>
-        <Hamburger />
+        <Hamburger/>
+
+        <MobileNavbar/>
     </div>
   )
 }
